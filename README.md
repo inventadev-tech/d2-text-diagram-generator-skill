@@ -1,8 +1,9 @@
-# D2 Unicode Flow Skill
+# Unicode Flow Skill
 
-Skill to develop Unicode text flow diagrams after complex code changes made by LLMs.
+Skill to develop any type of software diagram in the agent coder like codex, claude and opencode.
+Example, it can generate flow diagrams, C4 model diagrams, sequence diagrams when user ask to understand a new project.
 
-The LLM generates a D2 diagram after code changes, then a wrapper script renders Unicode text that can be copied into the chat answer.
+The LLM generates a D2 diagram in the terminal.
 
 ## Structure
 
