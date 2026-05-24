@@ -1,0 +1,9 @@
+.venv/
+.tmp/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+spec.tmp
+spec.utxt
+d2_unicode_input.d2
+d2_unicode_output.txt
