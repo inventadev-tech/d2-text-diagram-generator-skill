@@ -1,0 +1,14 @@
+Trip: Trip aggregate
+TripDraft: TripDraft
+Planner: Planner
+Catalog: Catalog port
+Weather: Weather port
+Repository: Repository
+Event: Event
+
+TripDraft -> Planner: input
+Planner -> Catalog: find trails
+Planner -> Weather: score weather
+Planner -> Trip: creates
+Trip -> Repository: save
+Trip -> Event: emits

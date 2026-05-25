@@ -1,0 +1,19 @@
+shape: sequence_diagram
+
+user: User
+spa: Web SPA
+api: API
+idp: IdP
+graph: Graph API
+
+user -> spa: Open app
+spa -> idp: Auth code
+idp -> spa: API token
+spa -> api: Bearer token
+api -> idp: Validate
+api -> idp: OBO request
+idp -> api: Graph token
+api -> graph: User call
+graph -> api: Data
+api -> spa: JSON
+spa -> user: Dashboard

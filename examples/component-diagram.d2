@@ -1,0 +1,16 @@
+controller: Controller
+auth: Auth
+validator: Validator
+planner: Planner
+catalog: Catalog Client
+forecast: Forecast Client
+repo: Repository
+events: Event Publisher
+
+controller -> auth: checks session
+auth -> validator: allows request
+validator -> planner: valid trip draft
+planner -> catalog: loads trails
+catalog -> forecast: enriches forecast
+forecast -> repo: stores itinerary
+repo -> events: publishes trip.created

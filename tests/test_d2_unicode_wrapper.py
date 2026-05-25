@@ -10,7 +10,7 @@ import pytest
 WRAPPER_PATH = (
     Path(__file__).resolve().parents[1]
     / "skills"
-    / "skill-flow-diagram"
+    / "d2-text-diagram-generator"
     / "scripts"
     / "d2_unicode_wrapper.py"
 )

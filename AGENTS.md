@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This repository contains a publishable Codex skill for rendering D2 diagrams as Unicode text.
+This repository contains the publishable D2 Text Diagram Generator Skill for rendering D2 diagrams as Unicode text.
 
-- `skills/skill-flow-diagram/SKILL.md` defines the skill metadata, behavior, workflows, and user-facing rules.
-- `skills/skill-flow-diagram/scripts/d2_unicode_wrapper.py` is the Python wrapper that calls `d2` to render `.txt` output.
+- `skills/d2-text-diagram-generator/SKILL.md` defines the skill metadata, behavior, workflows, and user-facing rules.
+- `skills/d2-text-diagram-generator/scripts/d2_unicode_wrapper.py` is the Python wrapper that calls `d2` to render `.txt` output.
 - `examples/` contains repository-only D2 examples for manual verification and should not be part of the installed skill.
 - `tests/` contains repository-only tests and should not be part of the installed skill.
 - `src/` and other new folders should get files only when the purpose is clear.
@@ -15,10 +15,10 @@ This repository contains a publishable Codex skill for rendering D2 diagrams as 
 
 There is no package manager or build step at the repository root.
 
-- `python skills/skill-flow-diagram/scripts/d2_unicode_wrapper.py diagram.d2` renders a D2 file to Unicode text.
-- `Get-Content diagram.d2 | python skills/skill-flow-diagram/scripts/d2_unicode_wrapper.py` renders from stdin on PowerShell.
-- `python skills/skill-flow-diagram/scripts/d2_unicode_wrapper.py --ascii-mode standard diagram.d2` renders with standard ASCII characters.
-- `python -m py_compile skills/skill-flow-diagram/scripts/d2_unicode_wrapper.py` checks the wrapper for Python syntax errors.
+- `python skills/d2-text-diagram-generator/scripts/d2_unicode_wrapper.py diagram.d2` renders a D2 file to Unicode text.
+- `Get-Content diagram.d2 | python skills/d2-text-diagram-generator/scripts/d2_unicode_wrapper.py` renders from stdin on PowerShell.
+- `python skills/d2-text-diagram-generator/scripts/d2_unicode_wrapper.py --ascii-mode standard diagram.d2` renders with standard ASCII characters.
+- `python -m py_compile skills/d2-text-diagram-generator/scripts/d2_unicode_wrapper.py` checks the wrapper for Python syntax errors.
 - `uv run pytest` installs dev dependencies as needed and runs the Python test suite.
 - `d2 --version` verifies that the D2 CLI is available on `PATH`.
 
@@ -42,4 +42,4 @@ Pull requests should describe the behavior changed, list manual verification com
 
 ## Agent-Specific Instructions
 
-Keep the skill self-contained under `skills/skill-flow-diagram/`. Do not vendor D2 or generated temporary files such as `d2_unicode_input.d2` and `d2_unicode_output.txt`. If adding new automation, document required external tools in `skills/skill-flow-diagram/SKILL.md`.
+Keep the skill self-contained under `skills/d2-text-diagram-generator/`. Do not vendor D2 or generated temporary files such as `d2_unicode_input.d2` and `d2_unicode_output.txt`. If adding new automation, document required external tools in `skills/d2-text-diagram-generator/SKILL.md`.

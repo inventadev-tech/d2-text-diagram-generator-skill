@@ -1,11 +1,11 @@
 ---
-name: skill-flow-diagram
-description: Use this skill to create flowcharts, flow diagrams, and activity-style diagrams with D2. Use it when the user is lost in code flow or wants a visual explanation of code paths, workflows, orchestration, state transitions, retries, validation branches, or error handling. Prefer this skill when a rendered text diagram would clarify multi-step behavior, even if the user does not explicitly say "D2".
+name: d2-text-diagram-generator
+description: Use this skill to generate D2 diagrams rendered as Unicode/ASCII text. Use it when the user is lost in code flow or wants a visual explanation of code paths, workflows, orchestration, state transitions, retries, validation branches, or error handling. Prefer this skill when a rendered text diagram would clarify multi-step behavior, even if the user does not explicitly say "D2".
 ---
 
-# Skill flow diagram
+# D2 Text Diagram Generator Skill
 
-Use this skill to turn technical behavior into a rendered Unicode text diagram. The final answer should contain the rendered diagram, not just D2 source, unless the user asks for source or troubleshooting details.
+Use this skill to generate D2 diagrams rendered as Unicode/ASCII text. The final answer should contain the rendered diagram, not just D2 source, unless the user asks for source or troubleshooting details.
 
 ## Trigger Judgment
 

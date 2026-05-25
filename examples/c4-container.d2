@@ -1,0 +1,15 @@
+traveler: Traveler
+planner: Trip Planner Web App
+api: TrailKit API
+catalog: Catalog Service
+weather: Weather API
+db: Trips DB
+mailer: Email
+
+traveler -> planner: plans hikes
+planner -> api: HTTPS JSON
+api -> catalog: trails
+api -> weather: forecast
+api -> db: trips
+api -> mailer: invites
+api -> planner: returns itinerary
