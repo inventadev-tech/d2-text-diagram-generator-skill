@@ -194,7 +194,7 @@ From `examples/oauth2-obo-sequence.d2`, a sequence diagram for OAuth2 authentica
 Add this skill to your workspace using:
 
 ```bash
-npx skills add inventadev-tech/skills-flow-diagram/skills/d2-text-diagram-generator
+npx skills add inventadev-tech/d2-text-diagram-generator-skill/skills/d2-text-diagram-generator
 ```
 
 The subpath keeps repository-only files, such as `examples/`, `tests/`, and project metadata, out of the installed skill.
